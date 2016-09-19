@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+/*Grid sytem for data*/
+.row.unlimited-items {
+  flex-wrap: wrap;
+}
+/*Setting no of columns for each row*/
+.row.unlimited-items .col{
+  flex: none;
+  width: 100%;
+  height: auto;
+}
+.spinner svg {
+  width: 28px;
+  height: 28px;
+  stroke: #444;
+  fill: #444;
+}

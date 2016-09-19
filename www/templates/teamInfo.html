@@ -1,0 +1,32 @@
+<ion-view view-title="IPLTeams">
+  <!-- <ion-nav-buttons side="left"> -->
+     <!-- <button class="button button-clear" ng-click="myGoBack()" >
+     <i class="icon ion-ios-arrow-back"></i>
+     Back</button>
+     </ion-nav-buttons> -->
+  <ion-content class="padding">
+    <center>
+    <div ng-repeat= "x in data" class="row responsive-sm">
+      <div class="col responsive-sm">
+        <ion-list>
+          <ion-item>
+
+        <a ui-sref="playerList({teamname:x.team_name})" class="thumbnail">
+         <img src= "DD.jpg"id="{{x.team_img_url}}" name={{getImage(x.team_img_url)}} style="width:100px;height:100px" ></img></a>
+         </ion-item>
+       </ion-list>
+     </div>
+     <div class="col responsive-sm">
+
+    <ion-list>
+          <ion-item>team Name      :{{x.team_name}}</ion-item>
+          <ion-item>team Captain   : {{x.team_captain}}</ion-item>
+          <ion-item>team Coach     : {{x.team_coach}}</ion-item>
+          <ion-item>team Home Venue:{{x.team_home_venue}}</ion-item>
+          <ion-item>team Owner     : {{x.team_owner}}</ion-item>
+
+    </ion-list>
+  </div>
+  </center>
+  </ion-content>
+</ion-view>

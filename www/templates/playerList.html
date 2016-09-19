@@ -1,0 +1,56 @@
+<ion-view view-title="{{teamName}}">
+  <ion-nav-buttons side="left">
+     <button class="button button-clear" ng-click="myGoBack()" >
+     <i class="icon ion-ios-arrow-back"></i>
+     Back</button>
+     </ion-nav-buttons>
+         <ion-content class="padding">
+        <div class="list">
+        <center>
+          <div class="row responsive-sm">
+            <div class="col responsive-sm">
+              <ion-list>
+                <ion-item>
+            <img src= "DD.jpg"id="{{data1.team_img_url}}" name={{getImage(data1.team_img_url)}} style="width:150px;height:150px" ></img>
+            <!-- <ion-list> -->
+    <ion-item><span style="color:black;font-weight:bold">team Name</span>    :<span style="color:blue;font-weight:bold">{{data1.team_name}}</span></ion-item>
+    <ion-item><span style="color:black;font-weight:bold">team Captain</span> :<span style="color:red;font-weight:bold"> {{data1.team_captain}}</span></ion-item>
+    <ion-item><span style="color:black;font-weight:bold">team Coach          :{{data1.team_coach}}</span></ion-item>
+    <ion-item><span style="color:black;font-weight:bold">team Home Venue     :{{data1.team_home_venue}}</span></ion-item>
+    <ion-item><span style="color:black;font-weight:bold">team Owner          :{{data1.team_owner}}</span></ion-item>
+  </ion-item>
+</ion-list>
+</div>
+</div>
+
+  <!-- </tr> -->
+    <div ng-repeat= "x in data" class="row responsive-sm">
+      <div class="col responsive-sm">
+        <ion-list>
+          <ion-item>
+     <img src="DelhiDareDevils/amit_mishra.png" id={{x.player_img_url}} name={{getImage(x.player_img_url)}} style="width:169px height:169px"></img>
+   </ion-list>
+   </ion-item>
+ </div>
+ <div class ="col responsive-sm">
+
+
+    <ion-list>
+
+                               <ion-item>  Name     :<span style="color:red;font-weight:bold">{{x.player_name}}</span></ion-list>
+                               <ion-item>BattingStyle: {{x.player_batting_style}}</ion-item>
+                              <ion-item>BowlingStyle : {{x.player_bowling_style}}</ion-item>
+                              <ion-item>DateOfBirth  : {{x.player_dob}}</ion-item>
+                              <ion-item>Nationality  : {{x.player_nationality}}</ion-item>
+                              <ion-item>Role         :{{x.player_role}}</ion-item>
+    <!-- <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle> -->
+    <br>
+    </ion-list>
+  </div>
+  </div>
+  </center>
+</div>
+  </ion-content>
+</ion-view>

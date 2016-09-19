@@ -1,0 +1,38 @@
+<ion-view view-title="IPL">
+
+   <ion-content class="padding">
+     <!-- <center> -->
+         <center>
+<div class="row unlimited-items responsive-sm" >
+    <div ng-repeat="x in data">
+      <div class="col responsive-sm">
+
+      <!-- <center> -->
+        <!-- <ion-list>
+          <ion-item> -->
+
+     <!-- <div class = "col text-center"> -->
+              <!-- <button class = "button button-positive">Icon</button> -->
+                  <!-- <div class = "col text-center"> -->
+                 <a ui-sref="playerList({teamname:x.team_name})" class="thumbnail"><p>{{x.team_name}}</p>
+             <img  id="{{x.team_img_url}}" name="{{getImage(x.team_img_url)}}" alt="Ipl" width="240px" height="240px">
+              </a>
+            <!-- </div> -->
+
+            <!-- </center> -->
+          <!-- </ion-item>
+        </ion-list> -->
+            </div>
+          </div>
+        </div>
+             </center>
+        <!-- </div> -->
+    <!-- <ion-list> -->
+    <!-- <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle> -->
+    <!-- </ion-list> -->
+    <!-- </center> -->
+  </ion-content>
+
+</ion-view>
